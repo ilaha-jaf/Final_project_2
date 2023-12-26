@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <title>Shopping Cart</title>
+
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+  
+        <div id="cartItems" class="book-info-container">
+            
+        </div>
+   
+  <p id="totalPrice">Total Price: $0.00</p>
+   
+    <form id="checkoutForm" action="payment_process.html" method="post" target="_blank" class="checkout-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required>
+        <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+        <button type="submit" class="buy-button">Buy</button>
+    </form>
+    <script src="card.js"></script>
+</body>
+</html>

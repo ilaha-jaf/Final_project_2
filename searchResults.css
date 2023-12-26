@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+ 
+
+    padding: 0.69vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-links {
+    display: flex;
+    justify-content: end;
+}
+.social-links a {
+
+    text-decoration: none;
+    margin-right: 0.69vw;
+}
+.social-links img{
+  width: 2.78vw;
+  height: 2.78vw;
+}
+.search-box {
+    display: flex;
+justify-content: space-between;
+}
+.search-box img{
+    width: 4.17vw;
+    height: 4.17vw;
+    border-radius: 50%;
+    margin-left: 4.17vw;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.69vw; 
+  margin-bottom: 1.39vw;
+  margin-left: 13.89vw;
+}
+
+
+#searchInput {
+  padding: 0.56vw;
+  border: 1px solid #ccc;
+  border-radius: 0.28vw;
+  font-size: 1.11vw;
+  width: 17.36vw; 
+}
+
+
+#searchButton {
+  padding: 0.56vw 1.04vw;
+  margin-left: 0.69vw;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.28vw;
+  cursor: pointer;
+  font-size: 1.11vw;
+}
+
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.account-info a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.56vw 1.11vw;
+  border-radius: 0.28vw;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.account-info .account-link {
+  background-color: #393280;
+  color: #fff;
+font-size: 1.11vw;
+}
+
+.account-info .account-link:hover {
+  background-color: #281d5a;
+}
+
+.account-info .cart-link {
+  background-color: #007bff;
+  color: #fff;
+  margin-left: 0.69vw;
+  font-size: 1.11vw;
+}
+
+.account-info .cart-link:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.account-info {
+    margin-right: 1.39vw;
+    margin-top: 1.39vw;
+}
+nav {
+    background-color: #f4f4f4;
+    padding: 0.69vw;
+ 
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.08vw;
+    width: 41.67vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav ul li {
+    display: inline;
+    margin-right: 0.69vw;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.11vw;
+}
+
+.book-container {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .book-container img {
+    width: 13.89vw;
+    height: auto; 
+  }
+  
+  .cart-button {
+    position: absolute;
+    width: 8.90vw;
+    text-align: center;
+    height: 2.19vw;
+    font-size: 1.11vw;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ee5959;
+    color: #fff;
+    padding: 0.56vw 0.97vw;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    border-radius: 0.49vw;
+    
+}
+.container-child2{
+   text-align: center;
+}
+.container-child2 img{
+    border: 0.0694vw solid #ccc;
+    box-shadow: 0.14vw 0.14vw 0.42vw rgba(0, 0, 0, 0.3);
+    padding: 2.92vw;
+    width: 15.28vw;
+height: 22.08vw;
+}
+.container-child2 .bookinfo p{
+    text-align: center;
+}
+.book-name{
+    color: #393280;
+font-family: 'Inter', sans-serif;
+font-size: 1.53vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.book-author{
+    color: #888;
+font-family: 'Inter', sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.28px;
+text-transform: capitalize;
+margin-top: -10px;
+}
+.price{
+    color: #ED553B;
+font-family: 'Inter', sans-serif;
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.36px;
+text-transform: capitalize;
+}

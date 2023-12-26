@@ -1,0 +1,40 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px; 
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    text-align: left;
+    color: #333; 
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #393280;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.book-image {
+    width: 600px;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

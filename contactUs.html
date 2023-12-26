@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #map {
+            flex: 1;
+            width: 800px;
+            height: 500px;
+            margin-right: 20px;
+        }
+        .contact-form {
+            flex: 1;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            display: block;
+            width: 60%;
+            margin-bottom: 10px;
+            padding: 14px;
+            font-size: 14px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 67%;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="container">
+    <div id="map"></div>
+
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Your name">
+        <input type="email" id="email" placeholder="Your email">
+        <input type="tel" id="phone" placeholder="Your phone number">
+        <textarea id="message" placeholder="Your Message" rows="6"></textarea>
+        <button onclick="submitForm()">Get a Call Back</button>
+        <p class="error-message" id="error-message"></p>
+        <div class="contact-info">
+            <p><strong>Address:</strong> Baku, Azerbaijan</p>
+            <p><strong>Phone number:</strong> +994 66 666 66 66</p>
+            <p><strong>Email:</strong> bookarium@gmail.com</p>
+            <p><strong>Website:</strong> www.bookarium.com</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+        const errorMessage = document.getElementById('error-message');
+
+        if (name === '' || email === '' || phone === '' || message === '') {
+            errorMessage.textContent = 'Please fill in all fields.';
+        } else if (!isValidEmail(email)) {
+            errorMessage.textContent = 'Please enter a valid email address.';
+        } else {
+            errorMessage.textContent = '';
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('message').value = '';
+            alert('Form submitted successfully!');
+        }
+    }
+
+    const map = L.map('map').setView([40.4093, 49.8671], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    const marker = L.marker([40.4093, 49.8671]).addTo(map)
+        .bindPopup('Baku, AdnSu')
+        .openPopup();
+</script>
+
+</body>
+</html>

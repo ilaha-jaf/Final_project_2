@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .book-image {
+      flex: 1;
+      max-width: 300px;
+      margin-right: 20px;
+    }
+
+    .book-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-details {
+      flex: 2;
+    }
+
+    .book-title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .book-author {
+      font-style: italic;
+      color: #666;
+    }
+
+    .book-description {
+      margin-top: 15px;
+      line-height: 1.5;
+    }
+    .comments-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-content {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+}
+
+.comment-text {
+  margin-bottom: 5px;
+}
+
+.comment-rating {
+  color: gold;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="book-info">
+      <div class="book-image">
+        <img src="./images/book.svg" alt="Book Cover">
+      </div>
+      <div class="book-details">
+        <h2 class="book-title">Birds gonna be happy</h2>
+        <p class="book-author">By Timbur Hood</p>
+        <p class="book-description">
+          Birds in a state of contentment embody a harmonious and picturesque scene. Their lively chirping resonates through the air, adding a symphony to nature's melody. As the sun rises, illuminating the skies in hues of warmth, these feathered creatures awaken to embrace the day with an unparalleled zeal.</p>
+        <p class="price">$ 40.00</p>
+
+      </div>
+    </div>
+    
+    <div class="comments-section">
+        <h3 class="comments-title">Comments and Ratings</h3>
+        <div class="comment">
+          <div class="user-info">
+            <img src="./images/profile1.jpg" alt="User Profile">
+            <p class="username">Filankes Filankesov</p>
+          </div>
+          <div class="comment-content">
+            <p class="comment-text">Great book! Loved the content and storytelling.</p>
+            <p class="comment-rating">Rating: <span class="comment-rating">5</span>/5</p>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="user-info">
+            <img src="./images/profle2.jpg" alt="User Profile">
+            <p class="username">Filankese Filankesova</p>
+          </div>
+          <div class="comment-content">
+            <p class="comment-text">Interesting read, highly recommended!</p>
+            <p class="comment-rating">Rating: <span class="comment-rating">4</span>/5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
